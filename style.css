@@ -9,8 +9,11 @@ body {
   background-repeat: no-repeat;
 }
 
-main #espacoFrase {
-  background-color: white;
+#espacoFrase {
+  height: 120px;
+  width: 1000px;
+  margin-left: 20%;
+  margin-top: 13%;
 }
 
 #frase {
@@ -18,24 +21,26 @@ main #espacoFrase {
   font-family: "Pacifico", serif;
   font-style: italic;
   font-size: 200%;
-  position: absolute;
-  margin-left: 13%;
-  margin-top: 13%;
-  text-align: center;
   text-shadow: 0 0 0.4em rgb(255, 255, 255);
 }
 
 #btGerarFrase {
-  margin-left: 20%;
-  margin-top: 20%;
+  margin-left: 25%;
+  margin-top: 0.4%;
   background-color: transparent;
   animation: none;
   border: none;
+  background-color: rgb(183, 89, 89);
+  border-radius: 13px;
 }
 
 #btGerarFrase:hover {
-  background-color: rgb(183, 89, 89);
+  background-color: rgb(112, 54, 54);
   border-radius: 13px;
+}
+
+#btGerarFrase:disabled {
+  background-color: transparent;
 }
 
 footer {
@@ -54,7 +59,7 @@ footer a {
 }
 
 footer a:hover {
-  color: white;
+  color: rgb(183, 89, 89);
   padding-left: 10px;
   position: relative;
 }

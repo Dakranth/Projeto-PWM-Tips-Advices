@@ -1,7 +1,7 @@
 const btGerarFrase = document.getElementById("btGerarFrase");
 const frase = document.getElementById("frase");
 
-const fetchRandomCatImage = () => {
+const fetchRandomAdvice = () => {
   fetch("https://api.adviceslip.com/advice")
     .then((response) => {
       return response.json();
@@ -10,10 +10,15 @@ const fetchRandomCatImage = () => {
       console.log(data.slip.advice);
       let newfrase = `" ${data.slip.advice}"`;
       console.log(newfrase.length);
-      if (newfrase.length < 93) {
-        frase.innerHTML = `" ${data.slip.advice}"`;
-      } else {
-      }
+      frase.innerHTML = newfrase;
     });
+
+  document.getElementById("btGerarFrase").disabled = true;
+
+  setTimeout(btEnabled, 2500);
 };
-btGerarFrase.onclick = fetchRandomCatImage;
+
+function btEnabled() {
+  document.getElementById("btGerarFrase").disabled = false;
+}
+btGerarFrase.onclick = fetchRandomAdvice;
