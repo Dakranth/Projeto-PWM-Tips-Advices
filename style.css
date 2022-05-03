@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("img/background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main #espacoFrase {
+  background-color: white;
+}
+
+#frase {
+  color: rgb(0, 0, 0);
+  font-family: "Pacifico", serif;
+  font-style: italic;
+  font-size: 200%;
+  position: absolute;
+  margin-left: 13%;
+  margin-top: 13%;
+  text-align: center;
+  text-shadow: 0 0 0.4em rgb(255, 255, 255);
+}
+
+#btGerarFrase {
+  margin-left: 20%;
+  margin-top: 20%;
+  background-color: transparent;
+  animation: none;
+  border: none;
+}
+
+#btGerarFrase:hover {
+  background-color: rgb(183, 89, 89);
+  border-radius: 13px;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  padding-bottom: 1%;
+  width: 100%;
+  line-height: initial;
+  bottom: 0px;
+}
+
+footer a {
+  color: black;
+  padding-left: 10px;
+  position: relative;
+}
+
+footer a:hover {
+  color: white;
+  padding-left: 10px;
+  position: relative;
+}
